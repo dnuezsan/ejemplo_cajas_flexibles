@@ -1,0 +1,89 @@
+body{
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+/* Estilos del header */
+header{
+    background-color: black;
+}
+
+header h1{
+    margin: 0 auto;
+    padding: 2% 2% 0;
+    border-bottom: 2px solid white;
+    font-size: 3em;
+    color: white;
+}
+
+/* Estilos del nav */
+nav{
+    display: flex; 
+    flex-wrap: wrap; /* El elemento que se desborda se situa en la siguiente línea */
+    background-color: black;
+}
+
+nav div{
+    flex-grow: 1;
+    display: flex;
+}
+
+/* item desbordado */
+nav p{
+    background-color: white;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    text-align: right;
+    padding: 1%;
+    font-style: italic;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    padding: 2% 0%;
+}
+
+nav a:hover{
+    background-color: khaki;
+    color: black;
+}
+
+/* Estilos del main */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main div{
+    width: 30%;
+}
+
+main div:nth-child(2){
+    align-self: center;
+}
+
+main div:nth-child(3){
+
+    align-self: flex-end;
+}
+
+div img{
+    width: 100%;
+}
+/* Estilos del footer */
+footer{
+    background-color: #efefef;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
