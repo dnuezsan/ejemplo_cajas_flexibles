@@ -1,0 +1,101 @@
+body{
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+/* Estilos del header */
+header{
+    background-color: black;
+}
+
+header h1{
+    margin: 0 auto;
+    padding: 2% 2% 0;
+    border-bottom: 2px solid white;
+    font-size: 3em;
+    color: white;
+}
+
+/* Estilos del nav */
+nav{
+    display: flex; 
+    flex-wrap: wrap; /* El elemento que se desborda se situa en la siguiente línea */
+    background-color: black;
+}
+
+nav div{
+    flex-grow: 1;
+    display: flex;
+}
+
+/* item desbordado */
+nav p{
+    background-color: white;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    text-align: right;
+    padding: 1%;
+    font-style: italic;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    padding: 2% 0%;
+}
+
+nav a:hover{
+    background-color: khaki;
+    color: black;
+}
+/* Estilos del main */
+main{
+    display: flex;
+    flex-direction: row-reverse; /* Invierto el orden de los elementos del flex-box */
+    padding-top: 10%;
+    row-gap: 20px; /* crea un espacio de 20px entre los items de una fila */
+}
+
+main div:first-child{
+    flex-shrink: 10; /* La imagen cede espacio libre */
+}
+
+/* Alineo la segunda caja del main */
+main div:nth-child(2){
+    align-self: center; /* Situa la caja en el centro vertical */
+}
+
+main p{
+    padding: 0% 10%;
+}
+
+div img{
+    width: 100%;
+}
+
+#imagen img{
+    height: auto;
+}
+
+#aside{
+    width: 15%;
+    background-color: grey;
+}
+
+/* Estilos del footer */
+
+footer{
+    background-color: #efefef;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
