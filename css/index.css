@@ -1,3 +1,5 @@
+/* Daniel Núñez Santiago */
+
 body{
     margin: 0 auto;
     font-size: 15px;
@@ -28,7 +30,7 @@ nav div{
     display: flex;
 }
 
-/* item desbordado */
+/* p es un item desbordado */
 nav p{
     background-color: white;
     width: 100%;

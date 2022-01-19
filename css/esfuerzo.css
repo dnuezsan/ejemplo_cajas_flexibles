@@ -1,3 +1,5 @@
+/* Daniel Núñez Santiago */
+
 body{
     margin: 0 auto;
     font-size: 15px;
@@ -24,11 +26,11 @@ nav{
 }
 
 nav div{
-    flex-grow: 1;
+    flex-grow: 1; /* Las cajas del nav cojen el mismo espacio libre */
     display: flex;
 }
 
-/* item desbordado */
+/* este p es un item desbordado */
 nav p{
     background-color: white;
     width: 100%;
@@ -59,7 +61,7 @@ nav a:hover{
 /* Estilos del main */
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Cambia la direccion del flex */
 }
 
 main div{
@@ -67,18 +69,20 @@ main div{
 }
 
 main div:nth-child(2){
-    align-self: center;
+    align-self: center; /* coloca el item en el centro del flex */
 }
 
 main div:nth-child(3){
 
-    align-self: flex-end;
+    align-self: flex-end; /* coloca el item al final del flex */
 }
 
 div img{
     width: 100%;
 }
+
 /* Estilos del footer */
+
 footer{
     background-color: #efefef;
     width: 100%;
